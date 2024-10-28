@@ -1,0 +1,112 @@
+nirish@nirish-ZEB-NBC-5S:~/Desktop/Exercise$ mkdir -p $HOME/exercise1 && cd $HOME/exercise1
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ ls
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ $HOME
+bash: /home/nirish: Is a directory
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ home
+Command 'home' not found, did you mean:
+  command 'hime' from deb hime (0.9.11+dfsg-4)
+  command 'hose' from deb netpipes (4.2-8build1)
+Try: sudo apt install <deb name>
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ HOME
+HOME: command not found
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ $HOME
+bash: /home/nirish: Is a directory
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo "Hello World"
+Hello World
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo Hello, World
+Hello, World
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo Hello, world; Foo bar
+Hello, world
+Command 'Foo' not found, did you mean:
+  command 'roo' from snap roo (2.0.3)
+  command 'Fgo' from deb ferret-vis (7.6.0-6ubuntu1)
+  command 'goo' from deb goo (0.155+ds-4)
+See 'snap info <snapname>' for additional versions.
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo Apple Banana World; Apple
+Apple Banana World
+Apple: command not found
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo Hello, world!
+Hello, world!
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo "line one";echo "line two"
+line one
+line two
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo "Hello, world > readme"
+Hello, world > readme
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo "Hello, world" > readme
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ ls
+readme
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ example="Hello, World"
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo $example
+Hello, World
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo ’$example’
+’Hello, World’
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo "$example"
+Hello, World
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo "Please enter your name."; read example
+Please enter your name.
+Nirish
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo "Hello $example"
+Hello Nirish
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ three=1+1+1;echo $three
+1+1+1
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ bc
+bc 1.07.1
+Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2017 Free Software Foundation, Inc.
+This is free software with ABSOLUTELY NO WARRANTY.
+For details type `warranty'. 
+
+^C
+(interrupt) use quit to exit.
+exit
+0
+quit
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo 1+1+1 | bc
+3
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ let three=1+1+1;echo $three
+3
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo date
+date
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ cal
+Command 'cal' not found, but can be installed with:
+sudo apt install ncal
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ which cal
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ /bin/cal
+bash: /bin/cal: No such file or directory
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ $(which cal)
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ ‘which cal‘
+Command '‘which' not found, did you mean:
+  command 'which' from deb debianutils (5.14)
+  command 'which' from deb gnu-which (2.21+dfsg-3)
+Try: sudo apt install <deb name>
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ echo "The date is $(date)"
+The date is Monday 28 October 2024 01:07:23 AM CET
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ seq 0 9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ seq 0 9 | wc -l
+10
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ seq 0 9 > sequence
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ wc -l < sequence
+10
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ for I in $(seq 1 9) ; do echo $I ; done
+1
+2
+3
+4
+5
+6
+7
+8
+9
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ (echo -n 0 ; for I in $(seq 1 9) ; do echo -n +$I ; done ; echo) | bc
+45
+nirish@nirish-ZEB-NBC-5S:~/exercise1$ 
+
