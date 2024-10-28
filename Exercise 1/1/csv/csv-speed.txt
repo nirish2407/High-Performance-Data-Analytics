@@ -1,0 +1,10 @@
+nirish@nirish-ZEB-NBC-5S:~/Desktop/Exercise$ time python3 csv_code.py
+['csv_code.py']
+[10.0, 20.473684210526315, 21.105263157894736, 43.578947368421055, 45.578947368421055]
+
+real	0m0.044s
+user	0m0.037s
+sys	0m0.007s
+nirish@nirish-ZEB-NBC-5S:~/Desktop/Exercise$ 
+
+
